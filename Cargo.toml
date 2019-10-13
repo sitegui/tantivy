@@ -63,6 +63,7 @@ rand = "0.7"
 maplit = "1"
 matches = "0.1.8"
 time = "0.1.42"
+criterion = "0.3.0"
 
 [profile.release]
 opt-level = 3
@@ -102,3 +103,7 @@ features = ["failpoints"]
 name = "failpoints"
 path = "tests/failpoints/mod.rs"
 required-features = ["fail/failpoints"]
+
+[[bench]]
+name = "bench"
+harness = false
